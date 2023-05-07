@@ -4,65 +4,82 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#4CAF50"
-    android:backgroundTint="#4CAF50">
+    android:background="#206068"
+    android:backgroundTint="#F3F4F3">
 
     <Button
         android:id="@+id/Aceptar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_width="122dp"
+        android:layout_height="63dp"
         android:backgroundTint="#000000"
         android:text="Aceptar"
         android:textColorHint="#014E23"
         app:circularflow_defaultRadius="40dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.272"
+        app:layout_constraintHorizontal_bias="0.186"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/googleanalitic"
-        app:layout_constraintVertical_bias="0.343" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.899" />
 
     <Button
         android:id="@+id/Cancelar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="128dp"
+        android:layout_height="66dp"
         android:layout_marginTop="48dp"
         android:backgroundTint="#000000"
         android:text="Cancelar"
         app:circularflow_defaultRadius="40dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.734"
+        app:layout_constraintHorizontal_bias="0.769"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/googleanalitic"
-        app:layout_constraintVertical_bias="0.328" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.89" />
 
     <TextView
         android:id="@+id/textView3"
+        style="@android:style/Widget.Material.Light.TextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Politica de privacidad"
-        android:textColor="@color/white"
-        android:textSize="34sp"
+        android:fontFamily="sans-serif-black"
+        android:foregroundTintMode="src_over"
+        android:text="POLITICA DE PRIVACIDAD"
+        android:textAlignment="gravity"
+        android:textColor="#135926"
+        android:textColorHighlight="#4CAF50"
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.179" />
+        app:layout_constraintVertical_bias="0.094" />
 
     <TextView
         android:id="@+id/googleanalitic"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Politica de Privacidad de nuestro servicio"
-        android:textColor="@color/white"
-        android:textSize="20sp"
+        android:layout_width="331dp"
+        android:layout_height="79dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Politica de privacidad de nuestro servicio"
+        android:textColor="#164E18"
+        android:textColorHighlight="#4CAF50"
+        android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.571"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.345" />
+        app:layout_constraintVertical_bias="0.74" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="325dp"
+        android:layout_height="341dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.31"
+        app:srcCompat="@drawable/captura_de_pantalla_2023_05_05_113307" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

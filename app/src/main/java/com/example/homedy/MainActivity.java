@@ -9,6 +9,9 @@ import android.os.Handler;
 import android.widget.Button;
 import android.widget.SearchView;
 
+import java.util.Timer;
+import java.util.TimerTask;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -16,22 +19,21 @@ public class MainActivity extends AppCompatActivity {
     SearchView search_view;
     DownloadManager.Query query;
 
-    @SuppressLint("NotifyDataSetChanged")
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        Intent ventana = new Intent(getApplicationContext(), politica.class);
-        startActivity(ventana);
-        new Handler().postDelayed(new Runnable() {
+        TimerTask tarea = new TimerTask() {
             @Override
             public void run() {
-                Intent intent=new Intent(MainActivity.this,MainActivity.class);
+                Intent intent = new Intent(MainActivity.this,politica.class);
                 startActivity(intent);
                 finish();
             }
-        },5000);
+        };
+        Timer tiempo = new Timer();
+        tiempo.schedule(tarea,5000);
 
     }
 

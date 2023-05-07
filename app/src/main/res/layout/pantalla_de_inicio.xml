@@ -1,87 +1,134 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="#F5F5F5"
     android:backgroundTint="#F5F5F5"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteX="54dp"
+    tools:layout_editor_absoluteY="136dp">
 
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="408dp"
-        android:layout_height="725dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="16dp"
-        android:background="#4CAF50"
-        android:orientation="vertical"
+    <SearchView
+        android:id="@+id/search"
+        android:layout_width="336dp"
+        android:layout_height="55dp"
+        android:background="#FFFFFF"
+        android:backgroundTint="#FFFFFF"
+        android:queryHint="Buscar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView4"
+        app:layout_constraintVertical_bias="0.272" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="239dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:text="@string/otros"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.939" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="239dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:text="@string/mascotas"
+        android:textColorHighlight="#154310"
+        android:textColorLink="#1F6021"
+        app:iconTint="#4CAF50"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.459" />
 
-        <SearchView
-            android:id="@+id/search"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#FFFFFF"
-            android:backgroundTint="#FFFFFF"
-            android:queryHint="Buscar" />
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="237dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:text="@string/golpes"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.55" />
 
-        <TextView
-            android:id="@+id/Remedios"
-            android:layout_width="match_parent"
-            android:layout_height="37dp"
-            android:text="@string/remedios"
-            android:textColor="@color/white"
-            android:textSize="24sp" />
+    <Button
+        android:id="@+id/DOLORES"
+        android:layout_width="232dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:text="@string/dolores"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.743" />
 
-        <Button
-            android:id="@+id/button"
-            android:layout_width="233dp"
-            android:layout_height="wrap_content"
-            android:backgroundTint="@color/black"
-            android:text="@string/dolores" />
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="235dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:text="@string/cuidado_personal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView4"
+        app:layout_constraintVertical_bias="0.844" />
 
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="235dp"
-            android:layout_height="wrap_content"
-            android:backgroundTint="@color/black"
-            android:text="@string/cuidado_personal" />
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="235dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:text="@string/bajar_de_peso"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.645" />
 
-        <Button
-            android:id="@+id/button3"
-            android:layout_width="235dp"
-            android:layout_height="wrap_content"
-            android:backgroundTint="@color/black"
-            android:text="@string/bajar_de_peso" />
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="274dp"
+        android:layout_height="173dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/captura_de_pantalla_2023_05_05_113307" />
 
-        <Button
-            android:id="@+id/button4"
-            android:layout_width="237dp"
-            android:layout_height="wrap_content"
-            android:backgroundTint="@color/black"
-            android:text="@string/golpes" />
-
-        <Button
-            android:id="@+id/button5"
-            android:layout_width="239dp"
-            android:layout_height="wrap_content"
-            android:backgroundTint="@color/black"
-            android:text="@string/mascotas" />
-
-        <Button
-            android:id="@+id/button6"
-            android:layout_width="239dp"
-            android:layout_height="wrap_content"
-            android:backgroundTint="@color/black"
-            android:text="@string/otros" />
-
-    </LinearLayout>
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="REMEDIOS"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView4"
+        app:layout_constraintVertical_bias="0.377" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

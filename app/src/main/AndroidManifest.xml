@@ -16,8 +16,18 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
+
+
+
+
         </activity>
         <activity android:name=".politica"></activity>
+
+        <activity android:name=".pantalladeinicio"></activity>
+        <activity android:name=".Dolores"
+            android:exported="true"></activity>
+        <activity android:name=".info_receta"></activity>
     </application>
 
 </manifest>
